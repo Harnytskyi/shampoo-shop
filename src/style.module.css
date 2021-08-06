@@ -8,7 +8,6 @@ body{
 .product{
   position: absolute;
   width: 573px;
-  height: 707px;
   left: 287px;
   top: 107px;
 
@@ -130,14 +129,14 @@ h1 {
   color: black;
 }
 
-input[type=submit] {
+/* input[type=submit] {
   margin: 2.4rem 0;
   background-color: #2659ff;
   border: none;
   color: white;
   font-size: 1.3rem;
   height: 4rem;
-} 
+}  */
 
 .select_group {
   width: 258px;
@@ -277,6 +276,75 @@ input[type=submit] {
 }
 .volume_checkbox:checked~label::after{
   background: linear-gradient(261.65deg, #EFBB37 -3.95%, #CF9E1F 109.44%);
+}
+/* input type number */
+.input_number {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #E2E9F0;
+  border: 1px solid #E5E8EE;
+  box-sizing: border-box;
+  border-radius: 30px;
+  color: #424348;
+  font-size: 14px;
+  text-align: center;
+  left: 62px;
+  width: 93px;
+  
+}
+
+.input_number__input {
+  background: #E2E9F0;
+  width: 50px;
+  height: 32px;
+  border: none;
+  padding: 8px;
+  text-align: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+  color: #2C2C2C;
+  outline: none
+}
+
+.input_number__minus,
+.input_number__plus {
+  width: 20px;
+  height: 39px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  user-select: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+  color: #2C2C2C;
+}
+.submit_group{
+  display: flex;
+  margin-top: 25px;
+  align-items: flex-end;
+}
+.submit_button{
+  margin-left: 31px;
+  width: 302px;
+  height: 39px;
+  left: 472px;
+  top: 738px;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  border: none;
+  color: #FFFFFF;
+  background: linear-gradient(261.65deg, #EFBB37 -3.95%, #CF9E1F 109.44%);
+  border-radius: 30px;
 }
 
 ::-webkit-scrollbar {
