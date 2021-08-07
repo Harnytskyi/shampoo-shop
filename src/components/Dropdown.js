@@ -1,74 +1,61 @@
 import React, {useEffect, useRef} from 'react'
 import styles from '../style.module.css'
 
-export function Dropdown(){
+export function Dropdown({id}){
     const dropdownRef = useRef(null)
-    let select
+    const arrowRef = useRef(null)
+    const selectRef = useRef(null)
     let selectLabel
-    let arrow
-
-    console.log(styles)
+    
     useEffect(()=>{
     
-    select = document.querySelector("#dropdown");
-    arrow = document.querySelector("#arrow")
-    const options = document.querySelectorAll(styles.option);
-    selectLabel = document.getElementById('selectLabel')
+    selectLabel = document.getElementById(`selectLabel${id}`)
     },[])
 
-    // function buttonClick (e) {
-    //     e.preventDefault();
-    //   toggleHidden();
-    // }
     function addHidden() {
         
         const dropDownNode = dropdownRef.current;
+        const arrowNode = arrowRef.current
         dropDownNode.classList.add(styles.hidden);
-        arrow.classList.remove(styles.transform)
-        //select.classList.toggle("hidden");
+        arrowNode.classList.remove(styles.transform)
     }
     function deleteHidden() {
         
         const dropDownNode = dropdownRef.current;
+        const arrowNode = arrowRef.current
         dropDownNode.classList.remove(styles.hidden);
-        arrow.classList.add(styles.transform)
-        //select.classList.toggle("hidden");
+        arrowNode.classList.add(styles.transform)
     }
-    // options.forEach(function(option) {
-    //     option.addEventListener("click", function (e) {
-    //         console.log('aaa')
-    //         setSelectTitle(e);
-    //     });
-    // });
+    
     function setSelectTitle(e) {
         const labelElement = document.querySelector(`label[for="${e.target.id}"]`).innerText;
-        selectLabel.innerText = labelElement;
+        selectRef.current.innerText = labelElement;
         deleteHidden();
     };
     
 
     return(<div onMouseEnter ={deleteHidden} onMouseLeave ={addHidden} className={styles.select_group}>
 
-        <div  id="button" className={styles.button}>
-          <span id="selectLabel">Цвет</span>
-          <div id="arrow" className={styles.arrow}></div>
+        <div  id={`button{id}`} className={styles.button}>
+          <span id={`selectLabel{id}`} ref={selectRef}>Цвет</span>
+          <div id={`arrow{id}`} className={styles.arrow} ref={arrowRef}></div>
         </div>
         
-        <div className={`${styles.dropdown} ${styles.hidden}`} ref={dropdownRef} id="dropdown">
-          <input onClick={setSelectTitle} type="radio" id="select-internet" name="where" value="internet" className={styles.option}/>
-          <label htmlFor="select-internet" className={styles.select_item}>Желтый</label>
+        <div className={`${styles.dropdown} ${styles.hidden}`} ref={dropdownRef} id={`dropdown${id}`}>
+          <input onClick={setSelectTitle} type="radio" id={`select-yellow${id}`} name="where" value="yellow" className={styles.option}/>
+          <label htmlFor={`select-yellow${id}`} className={styles.select_item}>Желтый</label>
   
-          <input onClick={setSelectTitle} type="radio" id="select-family" name="where" value="family" className={styles.option}/>
-          <label htmlFor="select-family" className={styles.select_item}>Красный</label>
+          <input onClick={setSelectTitle} type="radio" id={`select-red${id}`} name="where" value="red" className={styles.option}/>
+          <label htmlFor={`select-red${id}`} className={styles.select_item}>Красный</label>
     
-          <input onClick={setSelectTitle} type="radio" id="select-existing" name="where" value="existing" className={styles.option}/>
-          <label htmlFor="select-existing" className={styles.select_item}>Зеленый</label>
+          <input onClick={setSelectTitle} type="radio" id={`select-green${id}`} name="where" value="green" className={styles.option}/>
+          <label htmlFor={`select-green${id}`} className={styles.select_item}>Зеленый</label>
           
-          <input onClick={setSelectTitle} type="radio" id="select-family" name="where" value="family" className={styles.option}/>
-          <label htmlFor="select-family" className={styles.select_item}>Черный</label>
+          <input onClick={setSelectTitle} type="radio" id={`select-black${id}`} name="where" value="black" className={styles.option}/>
+          <label htmlFor={`select-black${id}`} className={styles.select_item}>Черный</label>
     
-          <input onClick={setSelectTitle} type="radio" id="select-existing" name="where" value="existing" className={styles.option}/>
-          <label htmlFor="select-existing" className={styles.select_item}>Белый</label>
+          <input onClick={setSelectTitle} type="radio" id={`select-white${id}`} name="where" value="white" className={styles.option}/>
+          <label htmlFor={`select-white${id}`} className={styles.select_item}>Белый</label>
         </div>
         
       </div>

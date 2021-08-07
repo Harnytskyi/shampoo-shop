@@ -4,12 +4,15 @@
 body{
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
+.app{
+  display: flex;
+  gap: 35px;
+  margin:20px
+}
 
 .product{
-  position: absolute;
+  position: relative;
   width: 573px;
-  left: 287px;
-  top: 107px;
 
   background: #F8FAFC;
   border-radius: 25px;
@@ -43,9 +46,15 @@ body{
   margin-top: 53px;
   right: 0;
   left: 0;
-  background: url();
   background-color: #FFFFFF;
   border-radius: 25px;
+  background: url('./assets/images/image_21.png');
+  background-size: contain
+}
+.picture:hover{
+  background: url('./assets/images/image_21-2.png') center;
+    background-size: 225px;
+    background-repeat: no-repeat;
 }
 .compare_button, .compare_block{
   position: absolute;
@@ -110,9 +119,7 @@ body{
   margin-bottom: 20px;
 }
 /* dropdown */
-body {
-  background-color: #dde2ec;
-}
+
 
 .form-container {
   margin: 6rem auto;
@@ -129,14 +136,6 @@ h1 {
   color: black;
 }
 
-/* input[type=submit] {
-  margin: 2.4rem 0;
-  background-color: #2659ff;
-  border: none;
-  color: white;
-  font-size: 1.3rem;
-  height: 4rem;
-}  */
 
 .select_group {
   width: 258px;
@@ -345,6 +344,12 @@ h1 {
   color: #FFFFFF;
   background: linear-gradient(261.65deg, #EFBB37 -3.95%, #CF9E1F 109.44%);
   border-radius: 30px;
+}
+.submit_button:hover{
+  background: linear-gradient(261.65deg, #E9B32C -3.95%, #BF911A 109.44%);
+}
+.submit_button:active{
+  background: linear-gradient(261.65deg, #FFD773 -3.95%, #E2B645 109.44%);
 }
 
 ::-webkit-scrollbar {
