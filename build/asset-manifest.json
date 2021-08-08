@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.a109733f.chunk.css",
-    "main.js": "/static/js/main.31bed976.chunk.js",
-    "main.js.map": "/static/js/main.31bed976.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.6b631882.js",
-    "runtime-main.js.map": "/static/js/runtime-main.6b631882.js.map",
-    "static/js/2.992f646d.chunk.js": "/static/js/2.992f646d.chunk.js",
-    "static/js/2.992f646d.chunk.js.map": "/static/js/2.992f646d.chunk.js.map",
-    "static/js/3.5f7d3e14.chunk.js": "/static/js/3.5f7d3e14.chunk.js",
-    "static/js/3.5f7d3e14.chunk.js.map": "/static/js/3.5f7d3e14.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.a109733f.chunk.css.map": "/static/css/main.a109733f.chunk.css.map",
-    "static/js/2.992f646d.chunk.js.LICENSE.txt": "/static/js/2.992f646d.chunk.js.LICENSE.txt",
-    "static/media/style.module.css": "/static/media/image_21.5161de3f.png"
+    "main.css": "/shampoo-shop/static/css/main.f6192717.chunk.css",
+    "main.js": "/shampoo-shop/static/js/main.a1bc52e0.chunk.js",
+    "main.js.map": "/shampoo-shop/static/js/main.a1bc52e0.chunk.js.map",
+    "runtime-main.js": "/shampoo-shop/static/js/runtime-main.bbf32c96.js",
+    "runtime-main.js.map": "/shampoo-shop/static/js/runtime-main.bbf32c96.js.map",
+    "static/js/2.0ec89b32.chunk.js": "/shampoo-shop/static/js/2.0ec89b32.chunk.js",
+    "static/js/2.0ec89b32.chunk.js.map": "/shampoo-shop/static/js/2.0ec89b32.chunk.js.map",
+    "static/js/3.89c976b9.chunk.js": "/shampoo-shop/static/js/3.89c976b9.chunk.js",
+    "static/js/3.89c976b9.chunk.js.map": "/shampoo-shop/static/js/3.89c976b9.chunk.js.map",
+    "index.html": "/shampoo-shop/index.html",
+    "static/css/main.f6192717.chunk.css.map": "/shampoo-shop/static/css/main.f6192717.chunk.css.map",
+    "static/js/2.0ec89b32.chunk.js.LICENSE.txt": "/shampoo-shop/static/js/2.0ec89b32.chunk.js.LICENSE.txt",
+    "static/media/style.module.css": "/shampoo-shop/static/media/Vector.78c0a707.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.6b631882.js",
-    "static/js/2.992f646d.chunk.js",
-    "static/css/main.a109733f.chunk.css",
-    "static/js/main.31bed976.chunk.js"
+    "static/js/runtime-main.bbf32c96.js",
+    "static/js/2.0ec89b32.chunk.js",
+    "static/css/main.f6192717.chunk.css",
+    "static/js/main.a1bc52e0.chunk.js"
   ]
 }
