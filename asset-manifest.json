@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/shampoo-shop/static/css/main.f6192717.chunk.css",
+    "main.js": "/shampoo-shop/static/js/main.a1bc52e0.chunk.js",
+    "main.js.map": "/shampoo-shop/static/js/main.a1bc52e0.chunk.js.map",
+    "runtime-main.js": "/shampoo-shop/static/js/runtime-main.bbf32c96.js",
+    "runtime-main.js.map": "/shampoo-shop/static/js/runtime-main.bbf32c96.js.map",
+    "static/js/2.0ec89b32.chunk.js": "/shampoo-shop/static/js/2.0ec89b32.chunk.js",
+    "static/js/2.0ec89b32.chunk.js.map": "/shampoo-shop/static/js/2.0ec89b32.chunk.js.map",
+    "static/js/3.89c976b9.chunk.js": "/shampoo-shop/static/js/3.89c976b9.chunk.js",
+    "static/js/3.89c976b9.chunk.js.map": "/shampoo-shop/static/js/3.89c976b9.chunk.js.map",
+    "index.html": "/shampoo-shop/index.html",
+    "static/css/main.f6192717.chunk.css.map": "/shampoo-shop/static/css/main.f6192717.chunk.css.map",
+    "static/js/2.0ec89b32.chunk.js.LICENSE.txt": "/shampoo-shop/static/js/2.0ec89b32.chunk.js.LICENSE.txt",
+    "static/media/style.module.css": "/shampoo-shop/static/media/Vector.78c0a707.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bbf32c96.js",
+    "static/js/2.0ec89b32.chunk.js",
+    "static/css/main.f6192717.chunk.css",
+    "static/js/main.a1bc52e0.chunk.js"
+  ]
+}
